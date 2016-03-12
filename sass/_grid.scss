@@ -1,0 +1,34 @@
+// ==========================================================================================
+// Grid
+// ==========================================================================================
+
+.upfront-grid-border,
+.upfront-overlay-grid {
+    border: 0;
+}
+
+.upfront-overlay-grid {
+    background: none !important;
+}
+
+.upfront-overlay-grid::before {
+    background: linear-gradient(to top, $color--grid-row-large 1px, transparent 1px, transparent);
+    z-index: 2;
+    background-size: 100% $spacing--grid-row-large;
+    @extend %pseudos;
+}
+
+.upfront-overlay-grid::after {
+    background: linear-gradient(to top, $color--grid-row-small 1px, transparent 1px, transparent);
+    z-index: 2;
+    background-size: 100% $spacing--grid-row-small;
+    @extend %pseudos;
+}
+
+.upfront-overlay-grid .upfront-grid-border:nth-child(odd) {
+    background-color: $color--grid-col-odd;
+}
+
+.upfront-overlay-grid .upfront-grid-border:nth-child(even) {
+    background-color: $color--grid-col-even;
+}

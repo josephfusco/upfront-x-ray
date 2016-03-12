@@ -19,6 +19,10 @@ A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-up
 *Why can't I toggle it on?*
 This happens if you install the extension while you have the Upfront editor loaded. Refresh your page. (don't forget to save your edits first)
 
+## Development
+
+SASS is managed with Gulp. To build, first run `npm install` and then `gulp`.
+
 ## License
 
 [GPL v2 or later](LICENSE)

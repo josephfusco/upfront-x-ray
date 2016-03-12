@@ -32,13 +32,13 @@ function addOrRemoveCSS(opt) {
         storage.set(hostObj);
       }
 
-      loadCSS('ufx-default');
+      loadCSS('style');
       chrome.runtime.sendMessage({status: 'on'});
     } else {
       if (opt.toggle) {
         storage.remove(host);
       }
-      unloadCSS('ufx-default');
+      unloadCSS('style');
       chrome.runtime.sendMessage({status: 'off'});
     }
   });

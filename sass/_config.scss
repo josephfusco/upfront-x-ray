@@ -1,0 +1,20 @@
+// ==========================================================================================
+// Config
+// ==========================================================================================
+
+// Borders
+$color--module-border                  : #6858FF;
+$color--region-border                  : #FF1BC5;
+$color--group-border                   : #FBDB0B;
+
+// Overlays
+$color--overlay                        : rgba(0, 0, 0, 0.9);
+$color--boot-overlay                   : #0B0B0B;
+
+// Grid
+$color--grid-col-even                  : rgba(0,0,0,0.1);
+$color--grid-col-odd                   : rgba(255,255,255,0.1);
+$color--grid-row-large                 : rgba(155,155,155,.5);
+$color--grid-row-small                 : rgba(155,155,155,.3);
+$spacing--grid-row-large               : 50px;
+$spacing--grid-row-small               : 10px;

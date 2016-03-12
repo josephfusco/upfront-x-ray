@@ -1,0 +1,51 @@
+// ==========================================================================================
+// Main
+// ==========================================================================================
+
+// Make all text white improve visibility against dark background.
+.upfront-layout {
+    h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, div, dd, dl, dt, b, i, figcaption, figure, main, span, pre, blockquote {
+        color: #FFF !important;
+    }
+}
+
+// Set border colors
+.upfront-module-group {
+    @include x-ray-border($color--group-border);
+}
+
+.upfront-output-module-group {
+    @include x-ray-border($color--group-border);
+}
+
+.upfront-module {
+    @include x-ray-border($color--module-border);
+}
+
+.upfront-output-module {
+    @include x-ray-border($color--module-border);
+}
+
+.upfront-region-container-bg {
+    @include x-ray-border($color--region-border);
+}
+
+// Darken backgrounds & overlays
+.upfront-region-container-bg {
+    @include overlay($color--overlay);
+}
+
+.upfront-region-editing .upfront-region-editing-overlay {
+    z-index: 20;
+    background: $color--overlay;
+}
+
+.upfront-module:hover,
+.upfront-object-group-on-edit .upfront-object:hover {
+    background-color: $color--overlay;
+    box-shadow: none;
+}
+
+.upfront-loading.upfront-boot {
+    background: $color--boot-overlay;
+}

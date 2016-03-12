@@ -18,7 +18,7 @@
 		"run_at": "document_start"
 	}],
 	"web_accessible_resources": [
-		"ufx-default.css"
+		"style.css"
 	],
 	"icons": {
 		"16": "icons/icon-16-off.png",
