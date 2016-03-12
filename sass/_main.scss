@@ -3,7 +3,7 @@
 // ==========================================================================================
 
 // Make all text white improve visibility against dark background.
-.upfront-layout {
+.upfront-layout .upfront-object-view {
     h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, div, dd, dl, dt, b, i, figcaption, figure, main, span, pre, blockquote {
         color: #FFF !important;
     }
@@ -39,8 +39,34 @@
     box-shadow: none;
 }
 
-.upfront-loading.upfront-boot,
-.upfront-inline-modal-wrap,
-.upfront-region-bg-setting-footer {
+.upfront-loading.upfront-boot {
     background: $color--overlay;
+}
+
+// Notifier
+.upfront-logo {
+    &::after {
+        position: absolute;
+        left: 125px;
+        top: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        content: 'x-ray';
+        color: #E1E4E7;
+    }
+    &::before {
+        position: absolute;
+        left: 125px;
+        top: 25px;
+        font-size: 12px;
+        content: 'active';
+        color: transparent;
+        animation: pulse 1s infinite;
+    }
+}
+
+@keyframes pulse {
+    50% {
+        color: $color--group;
+    }
 }
