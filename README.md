@@ -12,7 +12,7 @@ A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-up
 
 + purple `#6750FF` - Upfront module
 + magenta `#FF00C7` - region
-+ gold `#FCDD00` - group
++ green `#00CE8D` - group
 
 ## Troubleshooting
 

@@ -3,13 +3,13 @@
 // ==========================================================================================
 
 // Borders
-$color--module-border                  : #6858FF;
-$color--region-border                  : #FF1BC5;
-$color--group-border                   : #FBDB0B;
+$color--module                         : #6858FF;
+$color--region                         : #FF1BC5;
+$color--group                          : #00CE8D;
 
 // Overlays
-$color--overlay                        : rgba(0, 0, 0, 0.9);
-$color--boot-overlay                   : #0B0B0B;
+$color--transparent-overlay            : rgba(0, 0, 0, 0.9);
+$color--overlay                        : #0B0B0B;
 
 // Grid
 $color--grid-col-even                  : rgba(0,0,0,0.1);

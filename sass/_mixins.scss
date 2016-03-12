@@ -2,15 +2,15 @@
 // Mixins
 // ==========================================================================================
 
-@mixin x-ray-border($color){
+@mixin x-ray-border($color, $size: inset 0 0 0 1px){
     &::after {
-        box-shadow: inset 0 0 0 1px $color;
+        box-shadow: $size $color;
         @extend %pseudos;
     }
 }
 
 @mixin overlay($color){
-    &::after {
+    &::before {
         background: $color;
         @extend %pseudos;
     }

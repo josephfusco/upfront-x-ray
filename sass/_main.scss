@@ -11,41 +11,36 @@
 
 // Set border colors
 .upfront-module-group {
-    @include x-ray-border($color--group-border);
-}
-
-.upfront-output-module-group {
-    @include x-ray-border($color--group-border);
+    @include x-ray-border($color--group);
 }
 
 .upfront-module {
-    @include x-ray-border($color--module-border);
+    @include x-ray-border($color--module);
 }
 
-.upfront-output-module {
-    @include x-ray-border($color--module-border);
-}
-
-.upfront-region-container-bg {
-    @include x-ray-border($color--region-border);
+.upfront-region-container {
+    @include x-ray-border($color--region);
 }
 
 // Darken backgrounds & overlays
-.upfront-region-container-bg {
-    @include overlay($color--overlay);
+.upfront-region-container {
+    position: relative;
+    @include overlay($color--transparent-overlay);
 }
 
 .upfront-region-editing .upfront-region-editing-overlay {
     z-index: 20;
-    background: $color--overlay;
+    background: $color--transparent-overlay;
 }
 
 .upfront-module:hover,
 .upfront-object-group-on-edit .upfront-object:hover {
-    background-color: $color--overlay;
+    background-color: $color--transparent-overlay;
     box-shadow: none;
 }
 
-.upfront-loading.upfront-boot {
-    background: $color--boot-overlay;
+.upfront-loading.upfront-boot,
+.upfront-inline-modal-wrap,
+.upfront-region-bg-setting-footer {
+    background: $color--overlay;
 }
