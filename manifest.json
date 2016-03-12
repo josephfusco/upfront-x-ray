@@ -1,0 +1,32 @@
+{
+	"name": "upfront x-ray",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "Make Upfront theme development easier by displaying element and region outlines/borders.",
+	"homepage_url": "http://github.com/josephfusco/upfront-x-ray",
+	"permissions": [
+		"activeTab",
+		"storage"
+	],
+	"background": {
+		"scripts": ["extensionEvents.js"],
+		"persistent": false
+	},
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["tab.js"],
+		"run_at": "document_start"
+	}],
+	"web_accessible_resources": [
+		"ufx-default.css"
+	],
+	"icons": {
+		"16": "icons/icon-16-off.png",
+		"48": "icons/icon-48-on.png",
+		"128": "icons/icon-128-on.png"
+	},
+	"browser_action": {
+		"default_title": "toggle upfront x-ray",
+		"default_icon": "icons/icon-16-off.png"
+	}
+}

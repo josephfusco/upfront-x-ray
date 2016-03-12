@@ -1,0 +1,117 @@
+/**
+ * Place borders on all modules & descrease thickness
+ */
+.upfront-output-module-group:after {
+    box-shadow: inset 0 0 0 1px #FBDB0B;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.upfront-module-group:after {
+     box-shadow: inset 0 0 0 1px #FBDB0B;
+}
+.upfront-module:after {
+     box-shadow: inset 0 0 0 1px #6858FF;
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: 1;
+}
+.upfront-output-module {
+    box-shadow: inset 0 0 0 1px #6858FF;
+}
+.upfront-region-container-bg:after {
+    box-shadow: inset 0px 2px 0px -1px #FF1BC5;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+/**
+ * Darken background layers
+ */
+.upfront-region-container-bg:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    content: '';
+}
+.upfront-module:hover, .upfront-object-group-on-edit .upfront-object:hover {
+    background-color: rgba(255,255,255,.12);
+    box-shadow: none;
+}
+
+/**
+ * Override default grid styles
+ * Make horizontal lines every 10px with a darker line every 50px
+ */
+.upfront-grid-border {
+    border-right: 0;
+}
+.upfront-overlay-grid {
+    border: 0;
+}
+.upfront-overlay-grid {
+    background: none !important;
+}
+.upfront-overlay-grid:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,rgba(155,155,155,.5) 1px,transparent 1px,transparent);
+    z-index: 2;
+    background-size: 100% 50px;
+    top: 0;
+    left: 0;
+}
+.upfront-overlay-grid:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,rgba(155,155,155,.3) 1px,transparent 1px,transparent);
+    z-index: 2;
+    background-size: 100% 10px;
+    top: 0;
+    left: 0;
+}
+.upfront-overlay-grid .upfront-grid-border:nth-child(odd) {
+    background-color: rgba(255,255,255,0.1);
+}
+.upfront-overlay-grid .upfront-grid-border:nth-child(even) {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/**
+ * Darken resizing handles slightly
+ */
+.upfront-wrapper-meta:before {
+    background: #FAFAFA;
+    box-shadow: 0 0 3px 0 rgba(36,57,77,.5);
+}
+.upfront-editable_entity>.upfront-resize-handle-s:before {
+    background: #FAFAFA;
+    box-shadow: 0 0 3px 0 rgba(36,57,77,.5);
+}
+
+/**
+ * Darken initial booting screen
+ */
+.upfront-loading.upfront-boot {
+    background: #0A0A0A;
+}
