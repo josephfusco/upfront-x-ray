@@ -16,7 +16,8 @@ A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-up
 
 ## Troubleshooting
 
-*Why can't I toggle it on?*
+*Why can't I toggle the extension on?*
+
 This happens if you install the extension while you have the Upfront editor loaded. Refresh your page. (don't forget to save your edits first)
 
 ## License
