@@ -2,7 +2,7 @@
 
 A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-upfront/) theme development that allows you to toggle a darkened background with highlighted element and region borders. Features an improved grid overlay with easier to see rows and columns.
 
-![screenshot 2](https://cloud.githubusercontent.com/assets/6676674/13715032/511fcbb8-e7a0-11e5-9140-f7468d784dfd.png)
+![screenshot-1](https://cloud.githubusercontent.com/assets/6676674/13720326/9276c98a-e7d3-11e5-9dab-779fd3c1535e.png)
 
 ## Install
 
@@ -16,7 +16,8 @@ A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-up
 
 ## Troubleshooting
 
-*Why can't I toggle it on?*
+*Why can't I toggle the extension on?*
+
 This happens if you install the extension while you have the Upfront editor loaded. Refresh your page. (don't forget to save your edits first)
 
 ## Development
