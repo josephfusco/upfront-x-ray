@@ -9,6 +9,12 @@
     }
 }
 
+// Darken buttons
+.upfront_cta {
+    background-color: $color--overlay !important;
+    border-color: #FFF !important;
+}
+
 // Set border colors
 .upfront-module-group {
     @include x-ray-border($color--group);
@@ -62,11 +68,5 @@
         content: 'active';
         color: transparent;
         animation: pulse 1s infinite;
-    }
-}
-
-@keyframes pulse {
-    50% {
-        color: $color--group;
     }
 }
