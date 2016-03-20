@@ -1,6 +1,6 @@
 {
 	"name": "upfront x-ray",
-	"version": "1.1",
+	"version": "1.2",
 	"manifest_version": 2,
 	"description": "Make Upfront theme development easier by displaying element and region outlines/borders.",
 	"homepage_url": "http://github.com/josephfusco/upfront-x-ray",
