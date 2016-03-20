@@ -2,76 +2,70 @@
 // Main
 // ==========================================================================================
 
-// Make all text white improve visibility against dark background.
-.upfront-layout .upfront-object-view {
-    h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, div, dd, dl, dt, b, i, figcaption, figure, main, span, pre, blockquote {
-        color: #FFF !important;
+// Only show in editor
+#page.upfront-layout-view {
+
+    // Make all text white improve visibility against dark background.
+    .upfront-object-view {
+        h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, div, dd, dl, dt, b, i, figcaption, figure, main, span, pre, blockquote {
+            color: #FFF !important;
+        }
+        * {
+            background-color: transparent !important;
+            color: #FFF !important;
+        }
     }
-}
 
-// Force dark backgrounds with white borders on certain elements
-.upfront_cta,
-.upfront-layout .upfront-object-view input[type="submit"],
-.upfront_edit_content_style {
-    background-color: $color--overlay !important;
-    border: 1px solid #FFF !important;
-    color: #FFF !important;
-}
-
-.upfront_edit_content_style {
-    box-shadow: 0 0 10px 5px rgba(0,0,0,1);
-}
-
-.comment {
-    @include x-ray-border(#FFF);
-    * {
-        border-color: transparent !important;
-        background-color: transparent !important;
-        color: #FFF !important;
+    // Force dark backgrounds with white borders on certain elements
+    .upfront_cta,
+    .upfront_edit_content_style,
+    .upfront-object-view input[type="submit"],
+    .upfront-object-view .submit-field {
+        outline: 1px solid #FFF;
+        outline-offset: -1px;
     }
-}
 
-// Set border colors
-.upfront-module-group {
-    @include x-ray-border($color--group);
-}
-
-.upfront-module {
-    @include x-ray-border($color--module);
-}
-
-.upfront-region-container {
-    @include x-ray-border($color--region);
-}
-
-// Darken backgrounds & overlays
-.upfront-region-container {
-    position: relative;
-    @include overlay($color--transparent-overlay);
-}
-
-.upfront-region-editing .upfront-region-editing-overlay {
-    z-index: 20;
-    background: $color--transparent-overlay;
-}
-
-.upfront-module:hover,
-.upfront-object-group-on-edit .upfront-object:hover {
-    background-color: $color--transparent-overlay;
-    box-shadow: none;
-}
-
-.upfront-loading.upfront-boot {
-    background-color: $color--overlay;
-    background-image: url(https://cloud.githubusercontent.com/assets/6676674/13902787/294d2ad2-ee2f-11e5-90c9-c08ddbe0f110.gif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    * {
-        text-shadow: 0 0 5px rgba(0,0,0,1);
+    .upfront_edit_content_style {
+        box-shadow: 0 0 10px 5px rgba(0,0,0,1);
     }
-}
+
+    .comment {
+        @include x-ray-border(#FFF);
+        * {
+            border-color: transparent !important;
+        }
+    }
+
+    // Set border colors
+    .upfront-module-group {
+        @include x-ray-border($color--group);
+    }
+
+    .upfront-module {
+        @include x-ray-border($color--module);
+    }
+
+    .upfront-region-container {
+        @include x-ray-border($color--region);
+    }
+
+    // Darken backgrounds & overlays
+    .upfront-region-container {
+        position: relative;
+        @include overlay($color--transparent-overlay);
+    }
+
+    .upfront-module:hover,
+    .upfront-object-group-on-edit .upfront-object:hover {
+        background-color: rgba(255,255,255,0.12) !important;
+        transition: .08s linear;
+        box-shadow: none;
+    }
+
+    .upfront-default-slider-item.upfront-default-slider-item-current {
+        @include overlay($color--transparent-overlay);
+    }
+} // #page.upfront-layout-view
 
 // Notifier
 .upfront-logo {
@@ -92,5 +86,17 @@
         content: 'active';
         color: transparent;
         animation: pulse 1s infinite;
+    }
+}
+
+.upfront-loading.upfront-boot {
+    background-color: $color--overlay;
+    background-image: url(https://cloud.githubusercontent.com/assets/6676674/13902787/294d2ad2-ee2f-11e5-90c9-c08ddbe0f110.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    * {
+        text-shadow: 0 0 5px rgba(0,0,0,1);
     }
 }
