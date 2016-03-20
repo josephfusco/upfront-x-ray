@@ -9,10 +9,26 @@
     }
 }
 
-// Darken buttons
-.upfront_cta {
+// Force dark backgrounds with white borders on certain elements
+.upfront_cta,
+.upfront-layout .upfront-object-view input[type="submit"],
+.upfront_edit_content_style {
     background-color: $color--overlay !important;
-    border-color: #FFF !important;
+    border: 1px solid #FFF !important;
+    color: #FFF !important;
+}
+
+.upfront_edit_content_style {
+    box-shadow: 0 0 10px 5px rgba(0,0,0,1);
+}
+
+.comment {
+    @include x-ray-border(#FFF);
+    * {
+        border-color: transparent !important;
+        background-color: transparent !important;
+        color: #FFF !important;
+    }
 }
 
 // Set border colors
@@ -46,7 +62,15 @@
 }
 
 .upfront-loading.upfront-boot {
-    background: $color--overlay;
+    background-color: $color--overlay;
+    background-image: url(https://cloud.githubusercontent.com/assets/6676674/13902787/294d2ad2-ee2f-11e5-90c9-c08ddbe0f110.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    * {
+        text-shadow: 0 0 5px rgba(0,0,0,1);
+    }
 }
 
 // Notifier
