@@ -2,7 +2,7 @@ var host = document.location.host;
 var storage = chrome.storage.sync;
 
 function loadCSS(file) {
-  if (document.getElementById(file)) {//the css has already been added
+  if (document.getElementById(file)) {
     return;
   }
   var link = document.createElement("link");
@@ -11,14 +11,14 @@ function loadCSS(file) {
   link.type = "text/css";
   link.rel = "stylesheet";
   var head = document.getElementsByTagName("head")[0];
-  if (head) { //in case this runs before head exists. hmmm.
+  if (head) {
     head.appendChild(link);
   }
 }
 
 function unloadCSS(file) {
   var cssNode = document.getElementById(file);
-  if (cssNode) { //this could be called when the thing's already unloaded
+  if (cssNode) {
     cssNode.parentNode.removeChild(cssNode);
   }
 }
