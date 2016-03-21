@@ -8,7 +8,7 @@ A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-up
 
 [Chrome extension](https://chrome.google.com/webstore/detail/upfront-x-ray/ffbcjeconbomjemdfonepohgkimbknga)
 
-**Pro Tip:** Set a shorcut by going to chrome://extensions/, scrolling to the bottom and click _Keyboard shortcuts_.
+**Pro Tip:** Set a shorcut by going to chrome://extensions/, scrolling to the bottom and clicking _Keyboard shortcuts_.
 
 ## Legend
 
