@@ -8,6 +8,8 @@ A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-up
 
 [Chrome extension](https://chrome.google.com/webstore/detail/upfront-x-ray/ffbcjeconbomjemdfonepohgkimbknga)
 
+**Pro Tip:** Set a shorcut by going to chrome://extensions/, scrolling to the bottom and click _keyboard shortcut_.
+
 ## Legend
 
 + purple `#6750FF` - Upfront module
