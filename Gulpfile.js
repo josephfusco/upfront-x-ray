@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	rename = require("gulp-rename"),
-	watch = require('gulp-watch');
+    sass = require('gulp-sass'),
+    rename = require("gulp-rename"),
+    watch = require('gulp-watch');
 
 gulp.task('styles', function () {
 	gulp.src('sass/**/*.scss')
