@@ -1,4 +1,4 @@
-# upfront x-ray
+# upfront x-ray [![downloads](https://img.shields.io/chrome-web-store/d/ffbcjeconbomjemdfonepohgkimbknga.svg)](https://chrome.google.com/webstore/detail/upfront-x-ray/ffbcjeconbomjemdfonepohgkimbknga)
 
 A Chrome Extension for [Upfront](https://premium.wpmudev.org/blog/introducing-upfront/) theme development that allows you to toggle a darkened background with highlighted element and region borders. Features an improved grid overlay with easy to see rows and columns.
 
